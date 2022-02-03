@@ -187,3 +187,15 @@
  			Personalização
  				[color] (Deixar visualização de branches colorida)
     				branch = auto ou branch = true ou branch = on ou branch = 1
+				
+	- Configurar aliases de forma global para ignorar arquivos localmente
+		* git config --global alias.ignore 'update-index --skip-worktree'
+		* git config --global alias.unignore 'update-index --no-skip-worktree'
+		* git config --global alias.ignored '!git ls-files -v | grep "^S"'
+		
+		git ignore
+			Ignora arquivos localmente
+		git unignore
+			Desfaz o comando 'git ignore' e faz com o git volte a reconhecer as alterações do arquivo
+		git ignored
+			Retorna a lista de todos os arquivos ignorados localmente
