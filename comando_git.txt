@@ -79,6 +79,9 @@
 
  	- Reverter mudanças feitas no arquivo do Working Directory
  		git checkout -- arquivo_teste.txt
+		
+	- Reverter arquivo da forma como está em uma branch especificada, nesse caso está revertendo o arquivo para a forma como estava na branch master
+		git checkout master -- arquivo.php
 
  	- Retirar arquivo do Staging Area após o add
  		git reset HEAD arquivo_teste.txt
