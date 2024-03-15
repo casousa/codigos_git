@@ -108,10 +108,19 @@
 		git stash(Primeiramente os arquivos precisam estar na Staging Area)
 		
 		Logo após corrigidos realizar
-		git stath apply
+		git stash apply
+
+		Visualizar lista de stash
+		git stash list
 
 		Para Limpar o stash
 		git stash clear
+
+		Para aplicar uma versão especifica de um stash
+		git stash apply stash@{n}
+
+		Para remover uma versão especifica de um stash
+		git stash drop stash@{n}
 
 	- Tornar o branch atual o ultimo da historia e atualizado de acordo com o que há de novo no master
 		git rebase master
