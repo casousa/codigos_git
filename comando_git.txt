@@ -122,6 +122,9 @@
 		Para remover uma versão especifica de um stash
 		git stash drop stash@{n}
 
+		Para salvar arquivos alterados no stash
+		git stash save "Sua mensagem para o stash"
+
 	- Tornar o branch atual o ultimo da historia e atualizado de acordo com o que há de novo no master
 		git rebase master
 
