@@ -34,6 +34,8 @@ Simples guia com os códigos git mais utilizados
     git add -i
 #### Trackear arquivo declarado no .gitignore
     git add nome_do_arquivo -f
+#### Separar mudanças em um mesmo arquivo para comitar separado
+    git add -p
 
 ## Remover arquivo
     git rm arquivo.txt
@@ -77,7 +79,7 @@ Simples guia com os códigos git mais utilizados
     git commit --amend -m "Commit Errado(CONSERTADO)"
 
 ## Reverter mudanças feitas no arquivo do Working Directory
- 		git checkout -- arquivo_teste.txt
+	git checkout -- arquivo_teste.txt
 		
 ## Reverter arquivo da forma como está em uma branch especificada, nesse caso está revertendo o arquivo para a forma como estava na branch master
     git checkout master -- arquivo.php
